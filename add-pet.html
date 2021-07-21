@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Dan's Pet Shop</title>
+</head>
+<body>
+    <header>
+        <img id="header-logo" src="https://fbcd.co/images/products/e56ce2192b8a6eb39035ea7f5b0e5ee7_resize.png" alt="generic logo">
+        <nav>
+            <ul id="main-menu">
+                <li class="menu-item"><a href="/">Home</a></li>
+                <li class="menu-item"><a href="pets.html">Browse Pets</a></li>
+                <li class="menu-item"><a href="add-pet.html">Add a New Pet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Add a Pet</h2>
+            <div id="add-pet-form">
+                <form onsubmit="addPet(event)">
+                    <label for="petName">
+                        Pet Name:
+                        <input type="text" name="petName">
+                    </label>
+                    <br>
+                    <label for="petType">
+                        Type:
+                        <input type="text" name="petType">
+                    </label>
+                    <br>
+                    <label for="color">
+                        Color:
+                        <input type="text" name="color">
+                    </label>
+                    <br>
+                    <label for="age">
+                        Age:
+                        <input type="number" name="age">
+                    </label>
+                    <br>
+                    <input type="submit" value="Save">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <ul id="footer-links">
+            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#">Browse Pets</a></li>
+            <li class="menu-item"><a href="#">New Customers</a></li>
+        </ul>
+        <p>Site created by Dan</p>
+    </footer> -->
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+*, *::before, *::after { margin:0; padding:0; box-sizing: inherit;}
+
+:root {
+    --bocapink: #ff216e;
+    --bocapurple: #272262;
+    --bocawhite: #e8e8e8;
+    --bocayellow: #ffdb02;
+    --bocaorange: #ff5401;
+}
+body {
+    font-family:'Verdana', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header { 
+    position:sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: var(--bocapink);
+    color:#FFFFFF;
+    min-height: inherit;
+}
+#header-logo { 
+    flex-basis: 180px;
+    max-width: 180px;
+    margin:0;
+}
+header>nav {
+    flex-basis:80%;
+}
+header>nav ul {
+    display: flex;
+    justify-content:flex-start;
+    flex-basis: 600px;
+    margin:20px;
+}
+ .menu-item {
+    list-style-type: none;
+    padding:20px;
+}
+.menu-item a {
+    font-weight: bold;
+    color:#FFFFFF;
+}
+header>button {
+    flex-basis: 64px;
+    background-color: var(--bocapink);
+    margin: auto 20px;
+    padding:6px 12px;
+    border-color: #df013e;
+}
+header>button a {
+    color:#FFFFFF;
+    font-weight:bold;
+}
+.menu-item .submenu {
+    display:none;
+    background-color: var(--bocapurple);
+    margin:6px;
+}
+.menu-item.active a {
+    color: var(--bocapink)
+}
+section {
+    min-height:80vh;
+    background-color: var(--bocawhite);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.4em;
+    padding: 20px;
+}
+#hero {
+    background-image: url('https://cdn.cnn.com/cnn/interactive/2018/11/entertainment/dogs-catching-treats-cnnphotos/media/01.jpg');
+    background-size: cover;
+    background-position:center top;
+    justify-content: space-around;
+    padding:4rem;
+}
+#hero .container {
+    flex-basis: 35%;
+    color: var(--bocawhite);
+    font-size:5rem;
+}
+#hero h1 {
+    font-size:5rem;
+    text-shadow: 0.5rem 0.5rem 1rem #333333;
+}
+#hero button {
+    background-image: linear-gradient(to bottom right, var(--bocapink) 5%, var(--bocapurple) 90%, var(--bocapink) 100% );
+    font-size:2rem;
+    padding: 12px 20px;
+    border-color: var(--bocapink);
+}
+#hero button a {
+    color:#FFFFFF;
+}
+.half {
+    flex-basis: 45%;
+    margin: 1.6rem;
+}
+.half img {
+    max-width:60vh;
+}
+.half h2, .half p { margin:1px 2% 1.2em;}
+.full-width{flex-basis:100%; text-align:center;}
+#add-pet-form form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-basis:45%;
+    padding:6px;
+}
+#add-pet-form label {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+#add-pet-form input{
+    font-size:1.2rem;
+    line-height: 2rem;;
+    border-radius: 4px;
+    margin-left:12px;
+}
+#add-pet-form input[type="submit"] {
+    background-color: var(--bocapurple);
+    color:#FFFFFF;
+    font-size:1.4rem;
+    font-weight:bold;
+    padding: 1rem 2rem;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:10px 32px;
+    background-color: var(--bocapurple);
+    height: inherit;
+    color:#FFFFFF;
+}
+footer ul {
+    display: flex;
+    margin:20px;
+}
