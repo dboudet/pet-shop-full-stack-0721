@@ -21,7 +21,7 @@
     </header>
 
     <main>
-        <section>
+        <section id="add-pet-page">
             <h2>Add a Pet</h2>
             <div id="add-pet-form">
                 <form onsubmit="addPet(event)">
@@ -45,20 +45,20 @@
                         <input type="number" name="age">
                     </label>
                     <br>
+                    <label for="photoURL">
+                        Photo URL:
+                        <input type="url" name="photoURL">
+                    </label>
+                    <br>
                     <input type="submit" value="Save">
                 </form>
             </div>
         </section>
     </main>
 
-    <!-- <footer>
-        <ul id="footer-links">
-            <li class="menu-item"><a href="#">Home</a></li>
-            <li class="menu-item"><a href="#">Browse Pets</a></li>
-            <li class="menu-item"><a href="#">New Customers</a></li>
-        </ul>
+    <footer>
         <p>Site created by Dan</p>
-    </footer> -->
+    </footer>
     
     <script src="scripts.js"></script>
 </body>

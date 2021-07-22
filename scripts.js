@@ -6,12 +6,13 @@ function getPets() {
             petsListContainer.innerHTML = ''
             const petsList = data.map(pet => {
                 return `<article>
-                <h3>${pet.petName}</h3>
+                <div class="pet-info"><h3>${pet.petName}</h3>
                 <p>
                     Type: ${pet.petType}<br>
                     Color: ${pet.color}<br>
                     Age: ${pet.age}
-                </p>
+                </p></div>
+                <div class="pet-photo"><img src="${pet.photoURL}" alt="${pet.petName}"></div>
                 </article>`
             })
             petsListContainer.innerHTML = petsList.join('<br>')
@@ -29,6 +30,7 @@ function addPet(event) {
         petType: form.elements.petType.value,
         color: form.elements.color.value,
         age: form.elements.age.value,
+        photoURL: form.elements.photoURL.value
     }
     console.log(newPet)
     fetch('https://danb-pet-boutique.web.app/pets', {
